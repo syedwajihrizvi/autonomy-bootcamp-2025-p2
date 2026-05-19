@@ -55,11 +55,8 @@ def command_worker(
     # =============================================================================================
     # Instantiate class object (command.Command)
     _, command_instance = command.Command.create(
-        connection, 
-        local_logger,
-        target, height_threshold, 
-        yaw_threshold, z_speed, 
-        turning_speed)
+        connection, local_logger, target, height_threshold, yaw_threshold, z_speed, turning_speed
+    )
     # Main loop: do work.
     while not controller.is_exit_requested():
         controller.check_pause()

@@ -24,7 +24,7 @@ class HeartbeatReceiver:
         connection: mavutil.mavfile,
         local_logger: logger.Logger,
         disconnect_threshold: int,
-        queue: queue_proxy_wrapper.QueueProxyWrapper
+        queue: queue_proxy_wrapper.QueueProxyWrapper,
     ):
         """
         Falliable create (instantiation) method to create a HeartbeatReceiver object.
@@ -45,7 +45,7 @@ class HeartbeatReceiver:
         connection: mavutil.mavfile,
         logger: logger.Logger,
         heartbeat_limit: int = 5,
-        queue: queue_proxy_wrapper.QueueProxyWrapper = None
+        queue: queue_proxy_wrapper.QueueProxyWrapper = None,
     ) -> None:
         assert key is HeartbeatReceiver.__private_key, "Use create() method"
         self._master = connection
@@ -57,9 +57,7 @@ class HeartbeatReceiver:
         if self._logger is not None:
             self._logger.info("HeartbeatReceiver initialized", True)
 
-    def run(
-        self
-    ):
+    def run(self):
         """
         Attempt to recieve a heartbeat message.
         If disconnected for over a threshold number of periods,
@@ -73,7 +71,9 @@ class HeartbeatReceiver:
             if self._missed_heartbeats == self._missed_heartbeats_limit:
                 self._connection_status = False
                 if self._queue is not None:
-                    self._queue.queue.put(f"Connection lost due to {self._missed_heartbeats} missed heartbeats")
+                    self._queue.queue.put(
+                        f"Connection lost due to {self._missed_heartbeats} missed heartbeats"
+                    )
         else:
             if not self._connection_status:
                 if self._queue is not None:
@@ -82,6 +82,7 @@ class HeartbeatReceiver:
             self._missed_heartbeats = 0
             if self._queue is not None:
                 self._queue.queue.put("Heartbeat received and connection is good")
+
 
 # =================================================================================================
 #                            ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑

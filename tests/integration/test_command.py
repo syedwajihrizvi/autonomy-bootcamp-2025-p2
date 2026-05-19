@@ -231,10 +231,23 @@ def main() -> int:
     threading.Timer(TELEMETRY_PERIOD * len(path), stop, (controller,)).start()
 
     # Put items into input queue
-    threading.Thread(target=put_queue, args=(path, input_queue,)).start()
+    threading.Thread(
+        target=put_queue,
+        args=(
+            path,
+            input_queue,
+        ),
+    ).start()
 
     # Read the main queue (worker outputs)
-    threading.Thread(target=read_queue, args=(controller, output_queue, main_logger,)).start()
+    threading.Thread(
+        target=read_queue,
+        args=(
+            controller,
+            output_queue,
+            main_logger,
+        ),
+    ).start()
 
     command_worker.command_worker(
         connection=connection,
@@ -245,7 +258,7 @@ def main() -> int:
         height_threshold=HEIGHT_TOLERANCE,
         yaw_threshold=ANGLE_TOLERANCE,
         z_speed=Z_SPEED,
-        turning_speed=TURNING_SPEED
+        turning_speed=TURNING_SPEED,
     )
     # =============================================================================================
     #                          ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑

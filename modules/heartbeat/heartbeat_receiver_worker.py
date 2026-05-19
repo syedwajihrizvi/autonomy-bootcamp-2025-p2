@@ -21,7 +21,7 @@ def heartbeat_receiver_worker(
     connection: mavutil.mavfile,
     controller: worker_controller.WorkerController,
     queue: queue_proxy_wrapper.QueueProxyWrapper,
-    disconnect_threshold: int = 5
+    disconnect_threshold: int = 5,
 ) -> None:
     """
     Worker process.
@@ -46,7 +46,9 @@ def heartbeat_receiver_worker(
     # =============================================================================================
     # Instantiate class object (heartbeat_receiver.HeartbeatReceiver)
     local_logger.info("Creating HeartbeatReceiver instance", True)
-    result, heartbeat_receiver_instance = heartbeat_receiver.HeartbeatReceiver.create(connection, local_logger, disconnect_threshold, queue)
+    result, heartbeat_receiver_instance = heartbeat_receiver.HeartbeatReceiver.create(
+        connection, local_logger, disconnect_threshold, queue
+    )
     if heartbeat_receiver_instance is None:
         local_logger.error("Failed to create HeartbeatReceiver instance")
         return
@@ -55,6 +57,8 @@ def heartbeat_receiver_worker(
         heartbeat_receiver_instance.run()
         # Sleep for a bit to avoid busy waiting. Adjust as necessary.
         time.sleep(1)
+
+
 # =================================================================================================
 #                            ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑
 # =================================================================================================

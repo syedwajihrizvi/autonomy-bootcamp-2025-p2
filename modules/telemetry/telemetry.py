@@ -92,7 +92,6 @@ class Telemetry:
             local_logger.error(str(e), True)
             return (False, None)
 
-
     def __init__(
         self,
         key: object,
@@ -104,18 +103,16 @@ class Telemetry:
         self._logger = local_logger
         self._last_position_ned = None
         self._last_altitude = None
-        if (self._logger is not None):
+        if self._logger is not None:
             self._logger.info("Telemetry initialized", True)
 
-    def run(
-        self
-    ):
+    def run(self):
         """
         Receive LOCAL_POSITION_NED and ATTITUDE messages from the drone,
         combining them together to form a single TelemetryData object.
         """
         msg = self._master.recv_match(type=["LOCAL_POSITION_NED", "ALTITUDE"], blocking=False)
-        if (msg):
+        if msg:
             # Determine the message type
             if msg.get_type() == "LOCAL_POSITION_NED":
                 self._last_position_ned = msg
@@ -123,7 +120,7 @@ class Telemetry:
                 self._last_altitude = msg
             else:
                 self._logger.error(f"Received unexpected message type: {msg.get_type()}", True)
-        if (self._last_position_ned and self._last_altitude):
+        if self._last_position_ned and self._last_altitude:
             telemetry_data = TelemetryData(
                 time_since_boot=self._last_position_ned.time_boot_ms,
                 x=self._last_position_ned.x,

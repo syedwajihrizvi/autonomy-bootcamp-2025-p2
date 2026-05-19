@@ -89,8 +89,12 @@ def main() -> int:
     # Create a multiprocess manager for synchronized queues
     manager = mp.Manager()
     # Create queues
-    telemetry_queue = queue_proxy_wrapper.QueueProxyWrapper(manager, TELEMETRY_WORKER_QUEUE_MAX_SIZE)
-    heartbeat_receiver_queue = queue_proxy_wrapper.QueueProxyWrapper(manager, HEARTBEAT_RECEIVER_WORKER_QUEUE_MAX_SIZE)
+    telemetry_queue = queue_proxy_wrapper.QueueProxyWrapper(
+        manager, TELEMETRY_WORKER_QUEUE_MAX_SIZE
+    )
+    heartbeat_receiver_queue = queue_proxy_wrapper.QueueProxyWrapper(
+        manager, HEARTBEAT_RECEIVER_WORKER_QUEUE_MAX_SIZE
+    )
     command_input_queue = queue_proxy_wrapper.QueueProxyWrapper(manager, COMMAND_QUEUE_MAX_SIZE)
     command_output_queue = queue_proxy_wrapper.QueueProxyWrapper(manager, COMMAND_QUEUE_MAX_SIZE)
 
@@ -99,43 +103,31 @@ def main() -> int:
     result, heartbeat_sender_worker_properties = worker_manager.WorkerProperties.create(
         count=HEARTBEAT_SENDER_WORKER_COUNT,
         target=heartbeat_sender_worker.heartbeat_sender_worker,
-        work_arguments=(
-            connection,
-            controller
-        ),
+        work_arguments=(connection, controller),
         input_queues=[],
         output_queues=[],
         controller=controller,
-        local_logger=main_logger
+        local_logger=main_logger,
     )
     # Heartbeat receiver
     result, heartbeat_receiver_worker_properties = worker_manager.WorkerProperties.create(
         count=HEARTBEAT_RECEIVER_WORKER_COUNT,
         target=heartbeat_receiver_worker.heartbeat_receiver_worker,
-        work_arguments=(
-            connection,
-            controller,
-            heartbeat_receiver_queue,
-            DISCONNECT_THRESHOLD
-        ),
+        work_arguments=(connection, controller, heartbeat_receiver_queue, DISCONNECT_THRESHOLD),
         input_queues=[],
         output_queues=[heartbeat_receiver_queue],
         controller=controller,
-        local_logger=main_logger
+        local_logger=main_logger,
     )
     # Telemetry
     result, telemetry_worker_properties = worker_manager.WorkerProperties.create(
         count=TELEMETRY_WORKER_COUNT,
         target=telemetry_worker.telemetry_worker,
-        work_arguments=(
-            connection,
-            controller,
-            telemetry_queue
-        ),
+        work_arguments=(connection, controller, telemetry_queue),
         input_queues=[],
         output_queues=[telemetry_queue],
         controller=controller,
-        local_logger=main_logger
+        local_logger=main_logger,
     )
     # Command
     result, command_worker_properties = worker_manager.WorkerProperties.create(
@@ -155,13 +147,12 @@ def main() -> int:
         input_queues=[command_input_queue],
         output_queues=[command_output_queue],
         controller=controller,
-        local_logger=main_logger
+        local_logger=main_logger,
     )
     # Create the workers (processes) and obtain their managers
     worker_managers = list[worker_manager.WorkerManager] = []
     result, heartbeat_sender_manager = worker_manager.WorkerManager.create(
-        worker_properties=heartbeat_sender_worker_properties,
-        local_logger=main_logger
+        worker_properties=heartbeat_sender_worker_properties, local_logger=main_logger
     )
     if not result:
         print("ERROR: Failed to create heartbeat sender manager")
@@ -170,8 +161,7 @@ def main() -> int:
     worker_managers.append(heartbeat_sender_manager)
 
     result, heartbeat_receiver_manager = worker_manager.WorkerManager.create(
-        worker_properties=heartbeat_receiver_worker_properties,
-        local_logger=main_logger
+        worker_properties=heartbeat_receiver_worker_properties, local_logger=main_logger
     )
     if not result:
         print("ERROR: Failed to create heartbeat receiver manager")
@@ -180,8 +170,7 @@ def main() -> int:
     worker_managers.append(heartbeat_receiver_manager)
 
     result, telemetry_manager = worker_manager.WorkerManager.create(
-        worker_properties=telemetry_worker_properties,
-        local_logger=main_logger
+        worker_properties=telemetry_worker_properties, local_logger=main_logger
     )
     if not result:
         print("ERROR: Failed to create telemetry manager")
@@ -190,8 +179,7 @@ def main() -> int:
     worker_managers.append(telemetry_manager)
 
     result, command_manager = worker_manager.WorkerManager.create(
-        worker_properties=command_worker_properties,
-        local_logger=main_logger
+        worker_properties=command_worker_properties, local_logger=main_logger
     )
     if not result:
         print("ERROR: Failed to create command manager")
@@ -221,7 +209,7 @@ def main() -> int:
 
     # Clean up worker processes
     for manager in worker_managers:
-        manager.join_workers() 
+        manager.join_workers()
     main_logger.info("Stopped")
 
     # We can reset controller in case we want to reuse it

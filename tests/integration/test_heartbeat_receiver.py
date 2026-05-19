@@ -72,6 +72,7 @@ def read_queue(
         except Exception:  # pylint: disable=broad-except
             continue
 
+
 # =================================================================================================
 #                            ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑
 # =================================================================================================
@@ -137,7 +138,7 @@ def main() -> int:
         connection=connection,
         controller=controller,
         queue=output_queue,
-        disconnect_threshold=DISCONNECT_THRESHOLD
+        disconnect_threshold=DISCONNECT_THRESHOLD,
     )
     # =============================================================================================
     #                          ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑

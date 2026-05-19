@@ -20,7 +20,7 @@ from ..common.modules.logger import logger
 def telemetry_worker(
     connection: mavutil.mavfile,
     controller: worker_controller.WorkerController,
-    queue: queue_proxy_wrapper.QueueProxyWrapper
+    queue: queue_proxy_wrapper.QueueProxyWrapper,
 ) -> None:
     """
     Worker process.
@@ -53,10 +53,12 @@ def telemetry_worker(
     while not controller.is_exit_requested():
         controller.check_pause()
         data = telemetry_instance.run()
-        if (data is not None):
+        if data is not None:
             if queue is not None:
                 queue.queue.put(data)
         time.sleep(1)
+
+
 # =================================================================================================
 #                            ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑
 # =================================================================================================
