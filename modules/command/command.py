@@ -46,25 +46,20 @@ class Command:  # pylint: disable=too-many-instance-attributes
         """
         Falliable create (instantiation) method to create a Command object.
         """
-        try:
-            if connection is None:
-                return (False, None)
-            instance = cls(
-                cls.__private_key,
-                connection,
-                local_logger,
-                target,
-                height_threshold,
-                yaw_threshold,
-                z_speed,
-                turning_speed,
-            )
-            local_logger.info("Command instance created", True)
-            return (True, instance)
-        except Exception as e:
-            local_logger.error("Failed to create Command instance", True)
-            local_logger.error(str(e), True)
+        if connection is None:
             return (False, None)
+        instance = cls(
+            cls.__private_key,
+            connection,
+            local_logger,
+            target,
+            height_threshold,
+            yaw_threshold,
+            z_speed,
+            turning_speed,
+        )
+        local_logger.info("Command instance created", True)
+        return (True, instance)
 
     def __init__(
         self,

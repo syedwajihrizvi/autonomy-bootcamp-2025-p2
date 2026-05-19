@@ -1,9 +1,6 @@
 """
 Telemetry gathering logic.
 """
-
-import time
-
 from pymavlink import mavutil
 
 from ..common.modules.logger import logger
@@ -81,16 +78,12 @@ class Telemetry:
         """
         Falliable create (instantiation) method to create a Telemetry object.
         """
-        try:
-            if connection is None:
-                return (False, None)
-            instance = cls(cls.__private_key, connection, local_logger)
-            local_logger.info("Telemetry instance created", True)
-            return (True, instance)
-        except Exception as e:
-            local_logger.error("Failed to create Telemetry instance", True)
-            local_logger.error(str(e), True)
+        if connection is None:
             return (False, None)
+        instance = cls(cls.__private_key, connection, local_logger)
+        local_logger.info("Telemetry instance created", True)
+        return (True, instance)
+
 
     def __init__(
         self,

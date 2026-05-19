@@ -23,28 +23,23 @@ class HeartbeatSender:
         """
         Falliable create (instantiation) method to create a HeartbeatSender object.
         """
-        try:
-            if connection is None:
-                return (False, None)
-            instance = cls(cls.__private_key, connection, logger)
-            if logger is not None:
-                logger.info("HeartbeatSender instance created", True)
-            return (True, instance)
-        except:
-            if logger is not None:
-                logger.error("Failed to create HeartbeatSender instance")
+        if connection is None:
             return (False, None)
+        instance = cls(cls.__private_key, connection, logger)
+        if logger is not None:
+            logger.info("HeartbeatSender instance created", True)
+        return (True, instance)
 
     def __init__(
-        self, key: object, connection: mavutil.mavfile, logger: logger.Logger | None = None
+        self, key: object, connection: mavutil.mavfile, local_logger: logger.Logger | None = None
     ) -> None:
         assert key is HeartbeatSender.__private_key, "Use create() method"
 
         # Do any intializiation here
         self._master = connection
-        self._logger = logger
-        if self._logger is not None:
-            self._logger.info("HeartbeatSender initialized", True)
+        self._local_logger = local_logger
+        if self._local_logger is not None:
+            self._local_logger.info("HeartbeatSender initialized", True)
 
     def run(self) -> None:
         """
@@ -57,8 +52,8 @@ class HeartbeatSender:
             0,
             mavutil.mavlink.MAV_STATE_ACTIVE,
         )
-        if self._logger is not None:
-            self._logger.info("Heartbeat sent", True)
+        if self._local_logger is not None:
+            self._local_logger.info("Heartbeat sent", True)
 
 
 # =================================================================================================

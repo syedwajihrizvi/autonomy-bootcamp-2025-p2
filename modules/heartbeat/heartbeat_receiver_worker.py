@@ -46,11 +46,11 @@ def heartbeat_receiver_worker(
     # =============================================================================================
     # Instantiate class object (heartbeat_receiver.HeartbeatReceiver)
     local_logger.info("Creating HeartbeatReceiver instance", True)
-    result, heartbeat_receiver_instance = heartbeat_receiver.HeartbeatReceiver.create(
+    _, heartbeat_receiver_instance = heartbeat_receiver.HeartbeatReceiver.create(
         connection, local_logger, disconnect_threshold, queue
     )
     if heartbeat_receiver_instance is None:
-        local_logger.error("Failed to create HeartbeatReceiver instance")
+        local_logger.error("Failed to create HeartbeatReceiver instance", True)
         return
     while not controller.is_exit_requested():
         controller.check_pause()

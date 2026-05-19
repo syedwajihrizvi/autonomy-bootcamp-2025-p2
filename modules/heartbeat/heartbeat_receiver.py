@@ -29,34 +29,29 @@ class HeartbeatReceiver:
         """
         Falliable create (instantiation) method to create a HeartbeatReceiver object.
         """
-        try:
-            if connection is None:
-                return (False, None)
-            instance = cls(cls.__private_key, connection, local_logger, disconnect_threshold, queue)
-            local_logger.info("HeartbeatReceiver instance created", True)
-            return (True, instance)
-        except Exception as e:
-            local_logger.error("Failed to create HeartbeatReceiver instance", True)
-            local_logger.error(str(e), True)
+        if connection is None:
             return (False, None)
+        instance = cls(cls.__private_key, connection, local_logger, disconnect_threshold, queue)
+        local_logger.info("HeartbeatReceiver instance created", True)
+        return (True, instance)
 
     def __init__(
         self,
         key: object,
         connection: mavutil.mavfile,
-        logger: logger.Logger,
+        local_logger: logger.Logger,
         heartbeat_limit: int = 5,
         queue: queue_proxy_wrapper.QueueProxyWrapper = None,
     ) -> None:
         assert key is HeartbeatReceiver.__private_key, "Use create() method"
         self._master = connection
-        self._logger = logger
+        self._local_logger = local_logger
         self._connection_status = True  # Assume connection is good at start
         self._missed_heartbeats = 0
         self._missed_heartbeats_limit = heartbeat_limit
         self._queue = queue
-        if self._logger is not None:
-            self._logger.info("HeartbeatReceiver initialized", True)
+        if self._local_logger is not None:
+            self._local_logger.info("HeartbeatReceiver initialized", True)
 
     def run(self) -> None:
         """
