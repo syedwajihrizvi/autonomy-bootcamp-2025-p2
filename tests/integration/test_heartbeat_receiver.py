@@ -66,11 +66,8 @@ def read_queue(
     Read and print the output queue.
     """
     while not controller.is_exit_requested() or output_queue.queue.qsize() > 0:
-        try:
-            value = output_queue.queue.get(timeout=0.5)
-            main_logger.info(f"Received value from worker: {value}", True)
-        except Exception:  # pylint: disable=broad-except
-            continue
+        value = output_queue.queue.get(timeout=0.5)
+        main_logger.info(f"Received value from worker: {value}", True)
 
 
 # =================================================================================================

@@ -71,11 +71,8 @@ def read_queue(
     Read and print the output queue.
     """
     while not controller.is_exit_requested() or output_queue.queue.qsize() > 0:
-        try:
-            d1, d2 = output_queue.queue.get(timeout=0.5)  # Wait for data with a timeout
-            main_logger.info(f"Output queue alt_str: {d1}, {d2}", True)
-        except Exception:
-            continue
+        d1, d2 = output_queue.queue.get(timeout=0.5)  # Wait for data with a timeout
+        main_logger.info(f"Output queue alt_str: {d1}, {d2}", True)
 
 
 def put_queue(

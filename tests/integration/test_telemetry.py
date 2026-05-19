@@ -62,11 +62,8 @@ def read_queue(
     Read and print the output queue.
     """
     while not controller.is_exit_requested() or output_queue.queue.qsize() > 0:
-        try:
-            data = output_queue.queue.get(timeout=0.5)  # Wait for 1 second for data
-            main_logger.info(f"Received Telemetry data: {data}", True)
-        except Exception:  # pylint: disable=broad-except
-            continue
+        data = output_queue.queue.get(timeout=0.5)  # Wait for 1 second for data
+        main_logger.info(f"Received Telemetry data: {data}", True)
 
 
 # =================================================================================================
