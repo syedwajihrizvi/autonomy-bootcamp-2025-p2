@@ -149,7 +149,7 @@ def main() -> int:
         local_logger=main_logger,
     )
     # Create the workers (processes) and obtain their managers
-    worker_managers =[]
+    worker_managers = []
     result, heartbeat_sender_manager = worker_manager.WorkerManager.create(
         worker_properties=heartbeat_sender_worker_properties, local_logger=main_logger
     )
