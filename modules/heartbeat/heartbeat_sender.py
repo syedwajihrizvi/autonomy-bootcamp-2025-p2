@@ -18,16 +18,16 @@ class HeartbeatSender:
 
     @classmethod
     def create(
-        cls, connection: mavutil.mavfile, logger: logger.Logger | None = None
+        cls, connection: mavutil.mavfile, local_logger: logger.Logger | None = None
     ) -> "tuple[True, HeartbeatSender] | tuple[False, None]":
         """
         Falliable create (instantiation) method to create a HeartbeatSender object.
         """
         if connection is None:
             return (False, None)
-        instance = cls(cls.__private_key, connection, logger)
-        if logger is not None:
-            logger.info("HeartbeatSender instance created", True)
+        instance = cls(cls.__private_key, connection, local_logger)
+        if local_logger is not None:
+            local_logger.info("HeartbeatSender instance created", True)
         return (True, instance)
 
     def __init__(
