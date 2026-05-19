@@ -79,7 +79,7 @@ def read_queue(
 
 
 def put_queue(
-    path,
+    path: list[telemetry.TelemetryData],
     input_queue: queue_proxy_wrapper.QueueProxyWrapper,  # Add any necessary arguments
 ) -> None:
     """

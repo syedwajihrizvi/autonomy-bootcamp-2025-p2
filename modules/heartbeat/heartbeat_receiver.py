@@ -25,7 +25,7 @@ class HeartbeatReceiver:
         local_logger: logger.Logger,
         disconnect_threshold: int,
         queue: queue_proxy_wrapper.QueueProxyWrapper,
-    ):
+    ) -> tuple[bool, "HeartbeatReceiver"]:
         """
         Falliable create (instantiation) method to create a HeartbeatReceiver object.
         """
@@ -35,8 +35,9 @@ class HeartbeatReceiver:
             instance = cls(cls.__private_key, connection, local_logger, disconnect_threshold, queue)
             local_logger.info("HeartbeatReceiver instance created", True)
             return (True, instance)
-        except:
-            local_logger.error("Failed to create HeartbeatReceiver instance")
+        except Exception as e:
+            local_logger.error("Failed to create HeartbeatReceiver instance", True)
+            local_logger.error(str(e), True)
             return (False, None)
 
     def __init__(
@@ -57,7 +58,7 @@ class HeartbeatReceiver:
         if self._logger is not None:
             self._logger.info("HeartbeatReceiver initialized", True)
 
-    def run(self):
+    def run(self) -> None:
         """
         Attempt to recieve a heartbeat message.
         If disconnected for over a threshold number of periods,

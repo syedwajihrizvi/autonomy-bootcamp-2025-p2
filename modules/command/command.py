@@ -42,7 +42,7 @@ class Command:  # pylint: disable=too-many-instance-attributes
         yaw_threshold: int,
         z_speed: int,
         turning_speed: float,
-    ):
+    ) -> tuple[bool, "Command"]:
         """
         Falliable create (instantiation) method to create a Command object.
         """
@@ -90,7 +90,7 @@ class Command:  # pylint: disable=too-many-instance-attributes
         if self._logger is not None:
             self._logger.info("Command initialized", True)
 
-    def run(self, data: telemetry.TelemetryData):
+    def run(self, data: telemetry.TelemetryData) -> tuple[str, str]:
         """
         Make a decision based on received telemetry data.
         """

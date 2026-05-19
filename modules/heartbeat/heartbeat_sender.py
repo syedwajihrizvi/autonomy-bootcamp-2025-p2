@@ -37,7 +37,7 @@ class HeartbeatSender:
 
     def __init__(
         self, key: object, connection: mavutil.mavfile, logger: logger.Logger | None = None
-    ):
+    ) -> None:
         assert key is HeartbeatSender.__private_key, "Use create() method"
 
         # Do any intializiation here
@@ -46,7 +46,7 @@ class HeartbeatSender:
         if self._logger is not None:
             self._logger.info("HeartbeatSender initialized", True)
 
-    def run(self):
+    def run(self) -> None:
         """
         Attempt to send a heartbeat message.
         """
