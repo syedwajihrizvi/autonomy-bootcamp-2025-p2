@@ -1,6 +1,7 @@
 """
 Telemetry gathering logic.
 """
+
 from pymavlink import mavutil
 
 from ..common.modules.logger import logger
@@ -83,7 +84,6 @@ class Telemetry:
         instance = cls(cls.__private_key, connection, local_logger)
         local_logger.info("Telemetry instance created", True)
         return (True, instance)
-
 
     def __init__(
         self,
