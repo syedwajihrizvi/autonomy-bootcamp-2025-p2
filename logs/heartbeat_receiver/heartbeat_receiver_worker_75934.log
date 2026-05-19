@@ -1,0 +1,4 @@
+16:30:40: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_receiver_worker.py | heartbeat_receiver_worker | 42] Logger initialized for Heartbeat Receiver
+16:30:40: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_receiver_worker.py | heartbeat_receiver_worker | 48] Creating HeartbeatReceiver instance
+16:30:40: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_receiver.py | __init__ | 58] HeartbeatReceiver initialized
+16:30:40: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_receiver.py | create | 36] HeartbeatReceiver instance created

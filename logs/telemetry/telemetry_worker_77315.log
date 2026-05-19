@@ -1,0 +1,4 @@
+16:32:09: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/telemetry/telemetry_worker.py | telemetry_worker | 45] Logger initialized
+16:32:09: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/telemetry/telemetry_worker.py | telemetry_worker | 51] Creating Telemetry instance
+16:32:09: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/telemetry/telemetry.py | __init__ | 108] Telemetry initialized
+16:32:09: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/telemetry/telemetry.py | create | 88] Telemetry instance created

@@ -40,29 +40,35 @@ def start_drone() -> None:
     """
     Start the mocked drone.
     """
-    subprocess.run(["python", "-m", MOCK_DRONE_MODULE], shell=True, check=False)
+    subprocess.Popen(["python", "-m", MOCK_DRONE_MODULE])
 
 
 # =================================================================================================
 #                            ↓ BOOTCAMPERS MODIFY BELOW THIS COMMENT ↓
 # =================================================================================================
 def stop(
-    args,  # Add any necessary arguments
+    controller: worker_controller.WorkerController
 ) -> None:
     """
     Stop the workers.
     """
-    pass  # Add logic to stop your worker
+    controller.request_exit()
 
 
 def read_queue(
-    args,  # Add any necessary arguments
+    controller: worker_controller.WorkerController, 
+    output_queue: queue_proxy_wrapper.QueueProxyWrapper,
     main_logger: logger.Logger,
 ) -> None:
     """
     Read and print the output queue.
     """
-    pass  # Add logic to read from your worker's output queue and print it using the logger
+    while not controller.is_exit_requested() or output_queue.queue.qsize() > 0:
+        try:
+            data = output_queue.queue.get(timeout=0.5)  # Wait for 1 second for data
+            main_logger.info(f"Received Telemetry data: {data}", True)
+        except Exception:  # pylint: disable=broad-except
+            continue
 
 
 # =================================================================================================
@@ -111,19 +117,20 @@ def main() -> int:
     # =============================================================================================
     # Mock starting a worker, since cannot actually start a new process
     # Create a worker controller for your worker
-
+    controller = worker_controller.WorkerController()
     # Create a multiprocess manager for synchronized queues
 
-    # Create your queues
-
+    telemetry_queue = queue_proxy_wrapper.QueueProxyWrapper(mp.Manager(), 10)
     # Just set a timer to stop the worker after a while, since the worker infinite loops
-    threading.Timer(TELEMETRY_PERIOD * NUM_TRIALS * 2 + NUM_FAILS, stop, (args,)).start()
+    threading.Timer(TELEMETRY_PERIOD * NUM_TRIALS * 2 + NUM_FAILS, stop, (controller,)).start()
 
     # Read the main queue (worker outputs)
-    threading.Thread(target=read_queue, args=(args, main_logger)).start()
+    threading.Thread(target=read_queue, args=(controller, telemetry_queue, main_logger)).start()
 
     telemetry_worker.telemetry_worker(
-        # Put your own arguments here
+        connection=connection,
+        controller=controller,
+        queue=telemetry_queue
     )
     # =============================================================================================
     #                          ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑

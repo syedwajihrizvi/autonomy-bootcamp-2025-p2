@@ -76,37 +76,71 @@ class Telemetry:
     def create(
         cls,
         connection: mavutil.mavfile,
-        args,  # Put your own arguments here
         local_logger: logger.Logger,
     ):
         """
         Falliable create (instantiation) method to create a Telemetry object.
         """
-        pass  # Create a Telemetry object
+        try:
+            if connection is None:
+                return (False, None)
+            instance = cls(cls.__private_key, connection, local_logger)
+            local_logger.info("Telemetry instance created", True)
+            return (True, instance)
+        except Exception as e:
+            local_logger.error("Failed to create Telemetry instance", True)
+            local_logger.error(str(e), True)
+            return (False, None)
+
 
     def __init__(
         self,
         key: object,
         connection: mavutil.mavfile,
-        args,  # Put your own arguments here
         local_logger: logger.Logger,
     ) -> None:
         assert key is Telemetry.__private_key, "Use create() method"
-
-        # Do any intializiation here
+        self._master = connection
+        self._logger = local_logger
+        self._last_position_ned = None
+        self._last_altitude = None
+        if (self._logger is not None):
+            self._logger.info("Telemetry initialized", True)
 
     def run(
-        self,
-        args,  # Put your own arguments here
+        self
     ):
         """
         Receive LOCAL_POSITION_NED and ATTITUDE messages from the drone,
         combining them together to form a single TelemetryData object.
         """
-        # Read MAVLink message LOCAL_POSITION_NED (32)
-        # Read MAVLink message ATTITUDE (30)
-        # Return the most recent of both, and use the most recent message's timestamp
-        pass
+        msg = self._master.recv_match(type=["LOCAL_POSITION_NED", "ALTITUDE"], blocking=False)
+        if (msg):
+            # Determine the message type
+            if msg.get_type() == "LOCAL_POSITION_NED":
+                self._last_position_ned = msg
+            elif msg.get_type() == "ALTITUDE":
+                self._last_altitude = msg
+            else:
+                self._logger.error(f"Received unexpected message type: {msg.get_type()}", True)
+        if (self._last_position_ned and self._last_altitude):
+            telemetry_data = TelemetryData(
+                time_since_boot=self._last_position_ned.time_boot_ms,
+                x=self._last_position_ned.x,
+                y=self._last_position_ned.y,
+                z=self._last_position_ned.z,
+                x_velocity=self._last_position_ned.vx,
+                y_velocity=self._last_position_ned.vy,
+                z_velocity=self._last_position_ned.vz,
+                yaw=self._last_position_ned.yaw,
+                roll=self._last_position_ned.roll,
+                pitch=self._last_position_ned.pitch,
+                roll_speed=self._last_position_ned.rollspeed,
+                pitch_speed=self._last_position_ned.pitchspeed,
+                yaw_speed=self._last_position_ned.yawspeed,
+            )
+            return telemetry_data
+        return None
 
 
 # =================================================================================================

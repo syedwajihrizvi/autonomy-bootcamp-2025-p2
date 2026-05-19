@@ -4,6 +4,7 @@ Heartbeat worker that sends heartbeats periodically.
 
 import os
 import pathlib
+import time
 
 from pymavlink import mavutil
 
@@ -18,8 +19,9 @@ from ..common.modules.logger import logger
 # =================================================================================================
 def heartbeat_receiver_worker(
     connection: mavutil.mavfile,
-    args,  # Place your own arguments here
-    # Add other necessary worker arguments here
+    controller: worker_controller.WorkerController,
+    queue: queue_proxy_wrapper.QueueProxyWrapper,
+    disconnect_threshold: int = 5
 ) -> None:
     """
     Worker process.
@@ -33,24 +35,26 @@ def heartbeat_receiver_worker(
     # Instantiate logger
     worker_name = pathlib.Path(__file__).stem
     process_id = os.getpid()
-    result, local_logger = logger.Logger.create(f"{worker_name}_{process_id}", True)
-    if not result:
-        print("ERROR: Worker failed to create logger")
-        return
-
+    _, local_logger = logger.Logger.create(f"{worker_name}_{process_id}", True)
     # Get Pylance to stop complaining
     assert local_logger is not None
 
-    local_logger.info("Logger initialized", True)
+    local_logger.info("Logger initialized for Heartbeat Receiver", True)
 
     # =============================================================================================
     #                          ↓ BOOTCAMPERS MODIFY BELOW THIS COMMENT ↓
     # =============================================================================================
     # Instantiate class object (heartbeat_receiver.HeartbeatReceiver)
-
-    # Main loop: do work.
-
-
+    local_logger.info("Creating HeartbeatReceiver instance", True)
+    result, heartbeat_receiver_instance = heartbeat_receiver.HeartbeatReceiver.create(connection, local_logger, disconnect_threshold, queue)
+    if heartbeat_receiver_instance is None:
+        local_logger.error("Failed to create HeartbeatReceiver instance")
+        return
+    while not controller.is_exit_requested():
+        controller.check_pause()
+        heartbeat_receiver_instance.run()
+        # Sleep for a bit to avoid busy waiting. Adjust as necessary.
+        time.sleep(1)
 # =================================================================================================
 #                            ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑
 # =================================================================================================

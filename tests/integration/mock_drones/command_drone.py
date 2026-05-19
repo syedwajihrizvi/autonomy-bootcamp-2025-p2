@@ -48,13 +48,13 @@ def main() -> int:
     for _ in range(NUM_TRIALS):
         msg = connection.recv_match(type="COMMAND_LONG", blocking=True, timeout=TIMEOUT)
         if not msg or msg.get_type() != "COMMAND_LONG":
-            local_logger.error("Sent incorrect message type or timed out, still expecting mesages")
+            local_logger.error("Sent incorrect message type or timed out, still expecting mesages" + f"Received message: {msg.get_type() if msg else None}")
             return -2
         if msg.command not in (
             mavutil.mavlink.MAV_CMD_CONDITION_CHANGE_ALT,
             mavutil.mavlink.MAV_CMD_CONDITION_YAW,
         ):
-            local_logger.error("Sent incorrect command within COMMAND_LONG message.")
+            local_logger.error("Sent incorrect command within COMMAND_LONG message. " + f"Received command: {msg.command}")
             return -3
         if msg.confirmation != 0:
             local_logger.error("Confirmation should be 0")

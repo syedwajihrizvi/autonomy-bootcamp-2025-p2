@@ -1,0 +1,15 @@
+16:31:16: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_sender_worker.py | heartbeat_sender_worker | 40] Logger initialized
+16:31:16: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_sender_worker.py | heartbeat_sender_worker | 49] Creating HeartbeatSender instance
+16:31:16: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_sender.py | __init__ | 51] HeartbeatSender initialized
+16:31:16: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_sender.py | create | 32] HeartbeatSender instance created
+16:31:16: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_sender.py | run | 65] Heartbeat sent
+16:31:17: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_sender.py | run | 65] Heartbeat sent
+16:31:18: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_sender.py | run | 65] Heartbeat sent
+16:31:19: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_sender.py | run | 65] Heartbeat sent
+16:31:20: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_sender.py | run | 65] Heartbeat sent
+16:31:21: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_sender.py | run | 65] Heartbeat sent
+16:31:22: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_sender.py | run | 65] Heartbeat sent
+16:31:23: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_sender.py | run | 65] Heartbeat sent
+16:31:24: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_sender.py | run | 65] Heartbeat sent
+16:31:25: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_sender.py | run | 65] Heartbeat sent
+16:31:26: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/heartbeat/heartbeat_sender.py | run | 65] Heartbeat sent

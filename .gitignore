@@ -12,3 +12,5 @@ venv/
 # Make bootcampers submit their logs as answers
 !logs/
 !logs/**
+
+.venv/
