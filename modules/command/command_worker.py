@@ -6,7 +6,7 @@ import os
 import pathlib
 
 from pymavlink import mavutil
-
+import time
 from utilities.workers import queue_proxy_wrapper
 from utilities.workers import worker_controller
 from . import command
@@ -26,6 +26,7 @@ def command_worker(
     yaw_threshold: int,
     z_speed: int,
     turning_speed: float,
+    telemetry_period: float
 ) -> None:
     """
     Worker process.
@@ -65,6 +66,7 @@ def command_worker(
             alt_str, yaw_str = command_instance.run(data)
             local_logger.info(f"Command run produced: alt_str: {alt_str}, yaw_str: {yaw_str}", True)
             output_queue.queue.put((alt_str, yaw_str))
+            time.sleep(telemetry_period)
 
 
 # =================================================================================================

@@ -47,7 +47,9 @@ def start_drone() -> None:
     """
     Start the mocked drone.
     """
-    subprocess.run(["python", "-m", MOCK_DRONE_MODULE], shell=True, check=False)
+     # TODO: Uncomment after
+    # subprocess.run(["python", "-m", MOCK_DRONE_MODULE], shell=True, check=False)
+    subprocess.Popen(["python", "-m", MOCK_DRONE_MODULE])
 
 
 # =================================================================================================
@@ -256,6 +258,7 @@ def main() -> int:
         yaw_threshold=ANGLE_TOLERANCE,
         z_speed=Z_SPEED,
         turning_speed=TURNING_SPEED,
+        telemetry_period=TELEMETRY_PERIOD,
     )
     # =============================================================================================
     #                          ↑ BOOTCAMPERS MODIFY ABOVE THIS COMMENT ↑

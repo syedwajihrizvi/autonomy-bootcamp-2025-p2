@@ -1,0 +1,28 @@
+00:16:50: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 45] Logger initialized
+00:16:50: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:16:50: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:16:51: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:16:51: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:16:54: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:16:54: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:16:55: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:16:55: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:16:56: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:16:56: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:16:57: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:16:57: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:16:58: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:16:58: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:16:59: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:16:59: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:17:00: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:17:00: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:17:01: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:17:01: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:17:02: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:17:02: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:17:03: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:17:03: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:17:04: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:17:04: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 82] Received a valid command
+00:17:05: [ERROR] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/mock_drones/command_drone.py | main | 86] Recieved extra command

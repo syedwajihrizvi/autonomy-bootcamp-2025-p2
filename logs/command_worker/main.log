@@ -1,33 +1,3 @@
-16:32:40: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/common/modules/logger/logger_main_setup.py | setup_main_logger | 62] main logger initialized
-16:32:41: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | main | 132] Connected!
-16:32:41: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: CHANGE_ALTITUDE: 1.00 meters. , CHANGING_YAW: 63.43 degrees. 
-16:32:41: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: CHANGE_ALTITUDE: -1.00 meters. , CHANGING_YAW: 63.43 degrees. 
-16:32:42: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , 
-16:32:42: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , 
-16:32:43: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , 
-16:32:43: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , 
-16:32:44: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , 
-16:32:44: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: 63.43 degrees. 
-16:32:45: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: 63.43 degrees. 
-16:32:45: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: 63.43 degrees. 
-16:32:46: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: -26.57 degrees. 
-16:32:46: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: -26.57 degrees. 
-16:32:47: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: -26.57 degrees. 
-16:32:47: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: -116.57 degrees. 
-16:32:48: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: -116.57 degrees. 
-16:32:48: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: -116.57 degrees. 
-16:32:49: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: 153.43 degrees. 
-16:32:49: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: 153.43 degrees. 
-16:32:50: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: 153.43 degrees. 
-16:32:50: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: -26.57 degrees. 
-16:32:51: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: -26.57 degrees. 
-16:32:51: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: -26.57 degrees. 
-16:32:52: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: 63.43 degrees. 
-16:32:52: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: 63.43 degrees. 
-16:32:53: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: 63.43 degrees. 
-16:32:53: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: 153.43 degrees. 
-16:32:54: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: 153.43 degrees. 
-16:32:54: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: 153.43 degrees. 
-16:32:55: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: -116.57 degrees. 
-16:32:55: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: -116.57 degrees. 
-16:32:56: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 76] Output queue alt_str: , CHANGING_YAW: -116.57 degrees. 
+00:16:49: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/common/modules/logger/logger_main_setup.py | setup_main_logger | 62] main logger initialized
+00:16:50: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | main | 131] Connected!
+00:16:50: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/tests/integration/test_command.py | read_queue | 77] Output queue alt_str: CHANGE_ALTITUDE: 1.00 meters. , CHANGING_YAW: 63.43 degrees. 

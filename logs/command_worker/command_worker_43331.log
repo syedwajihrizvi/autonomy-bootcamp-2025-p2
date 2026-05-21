@@ -1,0 +1,530 @@
+00:16:50: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 51] Logger initialized
+00:16:50: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | __init__ | 86] Command initialized
+00:16:50: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | create | 61] Command instance created
+00:16:50: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 0,
+            z: 29,
+            x_velocity: 0,
+            y_velocity: 0,
+            z_velocity: 4,
+            roll: None,
+            pitch: None,
+            yaw: 0,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:50: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 4.00 m/s
+00:16:50: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: CHANGE_ALTITUDE: 1.00 meters. , yaw_str: CHANGING_YAW: 63.43 degrees. 
+00:16:51: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 0,
+            z: 31,
+            x_velocity: 0,
+            y_velocity: 0,
+            z_velocity: -2,
+            roll: None,
+            pitch: None,
+            yaw: 0,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:51: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 3.00 m/s
+00:16:51: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: CHANGE_ALTITUDE: -1.00 meters. , yaw_str: CHANGING_YAW: 63.43 degrees. 
+00:16:51: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 0,
+            z: 30.2,
+            x_velocity: 0,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.1071487177940904,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:51: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 2.00 m/s
+00:16:51: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: 
+00:16:52: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 0,
+            z: 29.8,
+            x_velocity: 0,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.1071487177940904,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:52: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 1.50 m/s
+00:16:52: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: 
+00:16:52: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 0,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.1071487177940904,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:52: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 1.20 m/s
+00:16:52: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: 
+00:16:53: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 0,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.142055302833977,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:53: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 1.00 m/s
+00:16:53: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: 
+00:16:53: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 0,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.072242132754204,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:53: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 0.86 m/s
+00:16:53: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: 
+00:16:54: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 0,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: 20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 0,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:54: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 3.25 m/s
+00:16:54: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: 63.43 degrees. 
+00:16:54: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 10,
+            y: 0,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: 20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 0,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:54: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 5.11 m/s
+00:16:54: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: 63.43 degrees. 
+00:16:55: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 20,
+            y: 0,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: 20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 0,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:55: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 6.60 m/s
+00:16:55: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: 63.43 degrees. 
+00:16:55: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 30,
+            y: 0,
+            z: 30,
+            x_velocity: 20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:55: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 7.82 m/s
+00:16:55: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: -26.57 degrees. 
+00:16:56: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 30,
+            y: 10,
+            z: 30,
+            x_velocity: 20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:56: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 8.83 m/s
+00:16:56: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: -26.57 degrees. 
+00:16:56: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 30,
+            y: 20,
+            z: 30,
+            x_velocity: 20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:56: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 9.69 m/s
+00:16:56: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: -26.57 degrees. 
+00:16:57: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 30,
+            y: 30,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: -20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 3.141592653589793,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:57: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 10.43 m/s
+00:16:57: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: -116.57 degrees. 
+00:16:57: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 20,
+            y: 30,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: -20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: -3.141592653589793,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:57: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 11.07 m/s
+00:16:57: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: -116.57 degrees. 
+00:16:58: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 10,
+            y: 30,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: -20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 3.141592653589793,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:58: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 11.62 m/s
+00:16:58: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: -116.57 degrees. 
+00:16:58: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 30,
+            z: 30,
+            x_velocity: -20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: -1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:58: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 12.12 m/s
+00:16:58: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: 153.43 degrees. 
+00:16:59: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 20,
+            z: 30,
+            x_velocity: -20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: -1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:59: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 12.56 m/s
+00:16:59: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: 153.43 degrees. 
+00:16:59: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 10,
+            z: 30,
+            x_velocity: -20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: -1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:16:59: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 12.95 m/s
+00:16:59: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: 153.43 degrees. 
+00:17:00: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 0,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: 20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:17:00: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 13.30 m/s
+00:17:00: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: -26.57 degrees. 
+00:17:00: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 10,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: 20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:17:00: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 13.62 m/s
+00:17:00: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: -26.57 degrees. 
+00:17:01: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 20,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: 20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:17:01: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 13.91 m/s
+00:17:01: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: -26.57 degrees. 
+00:17:01: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 0,
+            y: 30,
+            z: 30,
+            x_velocity: 20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 0,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:17:01: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 14.17 m/s
+00:17:01: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: 63.43 degrees. 
+00:17:02: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 10,
+            y: 30,
+            z: 30,
+            x_velocity: 20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 0,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:17:02: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 14.42 m/s
+00:17:02: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: 63.43 degrees. 
+00:17:02: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 20,
+            y: 30,
+            z: 30,
+            x_velocity: 20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 0,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:17:02: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 14.64 m/s
+00:17:02: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: 63.43 degrees. 
+00:17:03: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 30,
+            y: 30,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: -20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: -1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:17:03: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 14.85 m/s
+00:17:03: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: 153.43 degrees. 
+00:17:03: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 30,
+            y: 20,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: -20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: -1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:17:03: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 15.04 m/s
+00:17:03: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: 153.43 degrees. 
+00:17:04: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 30,
+            y: 10,
+            z: 30,
+            x_velocity: 0,
+            y_velocity: -20,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: -1.5707963267948966,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:17:04: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 15.21 m/s
+00:17:04: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: 153.43 degrees. 
+00:17:04: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 30,
+            y: 0,
+            z: 30,
+            x_velocity: -20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: -3.141592653589793,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:17:04: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 15.38 m/s
+00:17:04: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: -116.57 degrees. 
+00:17:05: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 20,
+            y: 0,
+            z: 30,
+            x_velocity: -20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: 3.141592653589793,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:17:05: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 15.53 m/s
+00:17:05: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: -116.57 degrees. 
+00:17:05: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 65] Received telemetry data: {
+            time_since_boot: None,
+            x: 10,
+            y: 0,
+            z: 30,
+            x_velocity: -20,
+            y_velocity: 0,
+            z_velocity: 0,
+            roll: None,
+            pitch: None,
+            yaw: -3.141592653589793,
+            roll_speed: None,
+            pitch_speed: None,
+            yaw_speed: None
+        }
+00:17:05: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command.py | run | 100] Current Average Velocity: 15.68 m/s
+00:17:05: [INFO] [/Users/abrizvi/Desktop/Personal/UWARG/Bootcamp/autonomy-bootcamp-2025-p2/modules/command/command_worker.py | command_worker | 67] Command run produced: alt_str: , yaw_str: CHANGING_YAW: -116.57 degrees. 

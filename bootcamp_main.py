@@ -32,7 +32,7 @@ CONNECTION_STRING = "tcp:localhost:12345"
 TELEMETRY_WORKER_QUEUE_MAX_SIZE = 10
 HEARTBEAT_RECEIVER_WORKER_QUEUE_MAX_SIZE = 10
 COMMAND_QUEUE_MAX_SIZE = 10
-
+TELEMETRY_PERIOD = 0.5
 # Set worker counts
 COMMAND_WORKER_COUNT = 1
 HEARTBEAT_SENDER_WORKER_COUNT = 1
@@ -142,6 +142,7 @@ def main() -> int:
             ANGLE_TOLERANCE,
             Z_SPEED,
             TURNING_SPEED,
+            TELEMETRY_PERIOD
         ),
         input_queues=[command_input_queue],
         output_queues=[command_output_queue],
